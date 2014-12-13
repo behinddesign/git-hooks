@@ -30,12 +30,7 @@ mkdir $TMP_STAGING
 FILES_TO_CHECK=""
 for FILE in $FILES
 do
-    echo "$FILE" | egrep -q "$PHPCS_FILE_PATTERN"
-    RETVAL=$?
-    if [ "$RETVAL" -eq "0" ]
-    then
-        FILES_TO_CHECK="$FILES_TO_CHECK $FILE"
-    fi
+    FILES_TO_CHECK="$FILES_TO_CHECK $FILE"
 done
 
 if [ "$FILES_TO_CHECK" == "" ]; then
