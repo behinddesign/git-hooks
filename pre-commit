@@ -1,5 +1,7 @@
 #!/bin/bash
 
+TMP_STAGING="/tmp/.git_staged"
+
 # stolen from template file
 if git rev-parse --verify HEAD
 then
