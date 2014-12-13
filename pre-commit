@@ -52,7 +52,7 @@ do
   STAGED_FILES="$STAGED_FILES $TMP_STAGING/$FILE"
 done
 
-OUTPUT=$('vendor/bin/gulp precommit')
+OUTPUT=$('/usr/local/bin/gulp precommit')
 RETVAL=$?
 
 # delete temporary copy of staging area
